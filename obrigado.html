@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado!</title>
+    <link rel="stylesheet" href="css/estilo_intro.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            overflow: hidden; /* Evita barras de rolagem desnecessárias */
+        }
+        #matrixCanvas {
+            position: fixed; /* Fixa o canvas ao fundo */
+            top: 0;
+            left: 0;
+            z-index: -1; /* Envia o canvas para o fundo */
+        }
+        .final-message {
+            text-align: center;
+            color: white;
+            padding: 50px 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            max-width: 800px;
+            z-index: 1; /* Garante que a mensagem esteja acima do canvas */
+        }
+        .final-message h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+        .final-message p {
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+        .rodape-navegacao {
+            z-index: 1; /* Garante que os botões de navegação estejam acima do canvas */
+        }
+        .logo-container {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            z-index: 1; /* Garante que o logo esteja acima do canvas */
+        }
+        .logo-container img {
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    
+<canvas id="matrixCanvas"></canvas>
+
+    
+
+<div class="final-message">
+        <h1>Obrigado!</h1>
+        <p>Agradecemos por sua atenção.</p>
+        <p>Esperamos que o conteúdo tenha sido útil para vocês.</p>
+    </div>
+
+    <div class="rodape-navegacao">
+        <button class="botao-nav" onclick="anterior()">Anterior</button>
+        <button class="botao-nav" onclick="proximo()">Recomeçar</button>
+    </div>
+
+    <div class="logo-container">
+        <img src="image/logo_udc.jpg" alt="Logo UDC">
+    </div>
+
+    <script src="js/funcoes.js"></script>
+    <script src="js/matrix2.js"></script> 
+
+</body>
+</html>

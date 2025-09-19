@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: transparent;
+    color: #eceff4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Empurra o conteúdo para as extremidades */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; 
+}
+
+.matrix-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: hsl(0, 0%, 4%);
+    overflow: hidden;
+}
+
+.matrix-background span {
+    position: absolute;
+    color: #0eff6a;
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 100;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(-100vh);
+        opacity: 0.1;
+    }
+    to {
+        transform: translateY(100vh);
+        opacity: 0.8;
+    }
+}
+
+.capa-container {
+    /* Propriedades para centralizar o conteúdo perfeitamente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo (h1 e p) na vertical */
+    align-items: center; /* Centraliza o conteúdo (h1 e p) na horizontal */
+    flex-grow: 1; /* Faz o container ocupar todo o espaço disponível */
+}
+
+h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 5em;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    color: #d8dee9;
+    text-align: center;
+}
+
+.rodape-navegacao {
+    /* Novo posicionamento para a lateral direita */
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    /* Alterado para que os botões fiquem um abaixo do outro */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinhe os botões à direita dentro do container */
+    padding: 20px;
+}
+
+.botao-nav {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff; /* Borda agora na cor verde do matrix */
+    padding: 15px 30px;
+    margin-bottom: 15px; /* Adiciona espaço entre os botões */
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 5px 15px rgba(5, 5, 5, 0.2);
+}
+
+.botao-nav:hover {
+    background-color: #00ff00;
+    color: #000000;
+    border-color: #00ff00;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(53, 255, 63, 0.4);
+}
+
+/* Estilo para a logo da UDC no canto inferior direito */
+.logo-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Garante que a logo fique acima de outros elementos */
+}
+
+.logo-container img {
+    max-width: 70px; /* Reduz o tamanho da logo para 50px de largura máxima */
+    height: auto;
+    opacity: 0.2;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.logo-container img:hover {
+    opacity: 1;
+}
+
+/* Animação para o conteúdo principal */
+.capa-container {
+    /* ... (restante do código) */
+    opacity: 0;
+    animation: fadeIn 2.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: hsl(0, 0%, 64%);
+    color: #eceff4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    position: relative; /* Garante que o fundo matrix se posicione corretamente */
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 6em;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    color: #d8dee9;
+    text-align: center;
+    max-width: 800px;
+}

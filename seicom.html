@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos Linux</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        body {
+            overflow: hidden;
+        }
+        #matrixCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .content-wrapper, .capa-container, .rodape-navegacao, .logo-container {
+            position: relative;
+            z-index: 1;
+        }
+        /* Posição da logo */
+        .logo-container {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+        /* Posição do botão à direita, fora da área de texto */
+        .rodape-navegacao {
+            position: absolute;
+            bottom: 2000px;
+            right: 50px; /* Ajuste este valor se precisar mover mais para a esquerda */
+        }
+    </style>
+</head>
+<body>
+    <canvas id="matrixCanvas"></canvas>
+    
+    <div class="content-wrapper"> 
+        <div class="capa-container">
+            <h1>Linux Shell de Comandos</h1>
+            <p>Rafael Dias, Higor Rocha, Jonathan Krefta, Thiago Carmona</p>
+        </div>
+    </div>
+
+    <div class="rodape-navegacao">
+        <button class="botao-nav" onclick="proximo()">Próximo</button>
+    </div>
+
+    <div class="logo-container">
+        <img src="image/logo_udc.jpg" alt="Logo UDC">
+    </div>
+
+    <script src="js/funcoes.js"></script>
+    <script src="js/matrix2.js"></script>
+</body>
+</html>

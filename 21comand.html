@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comando kill</title>
+    <link rel="stylesheet" href="css/estilo_intro.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="matrix-background"></div>
+
+    <div class="terminal-falso">
+        <div class="terminal-barra-titulo">Prompt de Comando</div>
+        <div class="terminal-conteudo">
+            <p><span class="terminal-prompt">user@linux:~$</span> <span id="typing-command"></span><span id="blinking-bar" class="blinking-cursor">|</span></p>
+            <p><span id="typing-output"></span></p>
+            <p><span id="final-cursor" class="blinking-cursor">_</span></p>
+        </div>
+    </div>
+
+    <div class="capa-container">
+        <h1>21° Comand: kill</h1>
+        <h2>Comando kill</h2>
+        <p>
+            Se você tem um programa que não está respondendo bem, você pode finalizá-lo manualmente pelo comando kill. Ele vai mandar um certo sinal ao aplicativo com mau funcionamento e instruir que ele seja encerrado sozinho logo na sequência.
+        </p>
+        <p>
+            Existe um total de 64 avisos que você pode usar, mas, geralmente, as pessoas usam apenas 2 deles:
+        </p>
+        <p>
+            SIGTERM (15) – pede que um programa pare de rodar e dá algum tempo para salvar todo o seu progresso. Se você não especificar o aviso quando executar o comando kill, é este aviso que será usado.
+            SIGKILL (9) – força um programa a parar imediatamente, em que todo o progresso não salvo será perdido.
+        </p>
+        <p>
+            Além de saber os avisos (sinais, notificações), você também precisa conhecer o número de identificação do processo (PID) do programa que você quer matar (kill). Se você não souber o PID, apenas execute o comando ps ux.
+        </p>
+    </div>
+
+    <div class="rodape-navegacao">
+        <button class="botao-nav" onclick="anterior()">Anterior</button>
+        <button class="botao-nav" onclick="proximo()">Próximo</button>
+    </div>
+
+    <div class="logo-container">
+        <img src="image/logo_udc.jpg" alt="Logo UDC">
+    </div>
+
+    <script src="js/funcoes.js"></script>
+    <script src="js/typing21.js"></script>
+    <script src="js/page_number_background.js"></script>
+</body>
+</html>

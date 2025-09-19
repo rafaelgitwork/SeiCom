@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos zip e unzip</title>
+    <link rel="stylesheet" href="css/estilo_intro.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="matrix-background"></div>
+
+    <div class="terminal-falso">
+        <div class="terminal-barra-titulo">Prompt de Comando</div>
+        <div class="terminal-conteudo">
+            <p><span class="terminal-prompt">user@linux:~$</span> <span id="typing-command"></span><span id="blinking-bar" class="blinking-cursor">|</span></p>
+            <p><span id="typing-output"></span></p>
+            <p><span id="final-cursor" class="blinking-cursor">_</span></p>
+        </div>
+    </div>
+
+    <div class="capa-container">
+        <h1>30° comand: zip/unzip</h1>
+        <h2>Comandos zip e unzip</h2>
+        <p>
+            Use o comando zip para compactar seus arquivos em um arquivo ZIP, um formato universal comumente usado no Linux. Ele pode escolher automaticamente a melhor taxa de compactação.
+        </p>
+        <p>
+            O comando zip também é útil para arquivar arquivos e diretórios e reduzir o uso do disco.
+        </p>
+        <p>
+            Para usá-lo, digite a seguinte sintaxe:
+            <br>
+            `zip [opções] zipfile file1 file2...`
+        </p>
+        <p>
+            Por outro lado, o comando unzip extrai os arquivos compactados de um arquivo. Este é o formato geral:
+            <br>
+            `unzip [opção] nome_do_arquivo.zip`
+        </p>
+    </div>
+
+    <div class="matrix-background"></div>
+
+
+    <div class="rodape-navegacao">
+        <button class="botao-nav" onclick="anterior()">Anterior</button>
+        <button class="botao-nav" onclick="proximo()">Próximo</button>
+    </div>
+
+    <div class="logo-container">
+        <img src="image/logo_udc.jpg" alt="Logo UDC">
+    </div>
+
+    <script src="js/funcoes.js"></script>
+    <script src="js/typing30.js"></script>
+    <script src="js/page_number_background.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comando cp</title>
+    <link rel="stylesheet" href="css/estilo_intro.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="matrix-background"></div>
+
+    <div class="terminal-falso">
+        <div class="terminal-barra-titulo">Prompt de Comando</div>
+        <div class="terminal-conteudo">
+            <p><span class="terminal-prompt">user@linux:~$</span> <span id="typing-command"></span><span id="blinking-bar" class="blinking-cursor">|</span></p>
+            <p><span id="typing-output"></span></p>
+            <p><span id="final-cursor" class="blinking-cursor">_</span></p>
+        </div>
+    </div>
+
+    <div class="capa-container">
+        <h1>5°Comando: Cp </h1>
+        <h2>Comando cp</h2>
+        <p>
+            Use o comando cp para copiar arquivos ou diretórios e seu conteúdo. Abaixo, listamos alguns exemplos.
+        </p>
+        <p>
+            Para copiar um arquivo do diretório atual para outro, digite cp seguido do nome do arquivo e do diretório de destino. Por exemplo:
+        </p>
+        <p>
+            cp nomedoarquivo.txt /home/username/Documents
+        </p>
+        <p>
+            Para copiar arquivos para um diretório, digite os nomes dos arquivos seguidos do diretório de destino:
+        </p>
+        <p>
+            cp nomedoarquivo1.txt nomedoarquivo2.txt nomedoarquivo3.txt /home/username/Documents
+        </p>
+    </div>
+
+    <div class="rodape-navegacao">
+        <button class="botao-nav" onclick="anterior()">Anterior</button>
+        <button class="botao-nav" onclick="proximo()">Próximo</button>
+    </div>
+
+    <div class="logo-container">
+        <img src="image/logo_udc.jpg" alt="Logo UDC">
+    </div>
+
+    <script src="js/funcoes.js"></script>
+    <script src="js/typing5.js"></script>
+    <script src="js/page_number_background.js"></script>
+</body>
+</html>

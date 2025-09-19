@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comando rmdir</title>
+    <link rel="stylesheet" href="css/estilo_intro.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="matrix-background"></div>
+
+    <div class="terminal-falso">
+        <div class="terminal-barra-titulo">Prompt de Comando</div>
+        <div class="terminal-conteudo">
+            <p><span class="terminal-prompt">user@linux:~$</span> <span id="typing-command"></span><span id="blinking-bar" class="blinking-cursor">|</span></p>
+            <p><span id="typing-output"></span></p>
+            <p><span id="final-cursor" class="blinking-cursor">_</span></p>
+        </div>
+    </div>
+
+    <div class="capa-container">
+        <h1>8° Comando: rmdir</h1>
+        <h2>Comando rmdir</h2>
+        <p>
+            Para excluir permanentemente um diretório vazio, use o comando rmdir. Lembre-se de que o usuário que executa esse comando deve ter privilégios sudo no diretório pai.
+        </p>
+        <p>
+            Por exemplo, você deseja remover um subdiretório vazio chamado personal1 e sua pasta principal mydir:
+        </p>
+        <p>
+            rmdir -p mydir/personal1
+        </p>
+    </div>
+
+    <div class="rodape-navegacao">
+        <button class="botao-nav" onclick="anterior()">Anterior</button>
+        <button class="botao-nav" onclick="proximo()">Próximo</button>
+    </div>
+
+    <div class="logo-container">
+        <img src="image/logo_udc.jpg" alt="Logo UDC">
+    </div>
+
+    <script src="js/funcoes.js"></script>
+    <script src="js/typing8.js"></script>
+    <script src="js/page_number_background.js"></script>
+</body>
+</html>
