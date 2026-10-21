@@ -50,7 +50,7 @@ rafael@seicom:~$ ./iniciar-apresentacao.sh
 
 ## 📖 Sobre o projeto
 
-O **SEICOM | Linux Shell Experience** é uma apresentação web interativa e temática, criada para introduzir conceitos de **Linux, terminal e shell** de maneira visual, acessível e envolvente.
+O Projeto | Linux Shell Experience** é uma apresentação web interativa e temática, criada para introduzir conceitos de **Linux, terminal e shell** de maneira visual, acessível e envolvente.
 
 Com uma estética inspirada em interfaces de linha de comando, efeitos de digitação e animações no estilo *Matrix*, o projeto reúne páginas explicativas e uma sequência de conteúdos sobre o universo dos sistemas operacionais e seus comandos.
 
