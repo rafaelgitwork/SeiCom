@@ -108,45 +108,12 @@ SeiCom/
 └── seicom-finalizado.zip      # Arquivo compactado do projeto
 ```
 
-## 🚀 Como executar
-
-**1. Clone o repositório:**
-
-```bash
-git clone https://github.com/rafaelgitwork/SeiCom.git
-```
-
-**2. Acesse a pasta:**
-
-```bash
-cd SeiCom
-```
-
-**3. Abra `seicom.html` no navegador.**
-
-Você também pode abrir a pasta em um editor de código, como o VS Code, e utilizar uma extensão de servidor local, como o **Live Server**, se preferir.
-
-> **Dica:** a página `seicom.html` é a capa inicial da apresentação.
-
-## 👥 Autores
-
-Projeto desenvolvido por:
-
-- **Rafael Dias**
-- **Higor Rocha**
-- **Jonathan Krefta**
-- **Thiago Carmona**
-
 **Instituição:** Centro Universitário UDC  
 **Evento:** Semana Integrada de Computação — SEICOM
 
 ---
 
 <div align="center">
-
-### `rafael@seicom:~$ echo "Obrigado pela visita!"`
-
-**Feito com dedicação, código e curiosidade pela tecnologia.** 💚
 
 [⬆️ Voltar ao topo](#️-seicom--linux-shell-experience)
 
